@@ -1,0 +1,27 @@
+</head>
+<body>
+<p>Entrar com nome, sexo e idade de uma pessoa. Se a pessoa for do sexo feminino e tiver menos que 25 anos, imprimir nome e a a mensagem: ACEITA. Caso contrário, imprimir nome e a mensagem: NÃO ACEITA.</p><hr color="black">
+<form method="POST">
+    <label>Digite seu Nome: </label>
+    <input type="text" name="nome"/> <br><br>
+    <label>Digite seu sexo(F ou M): </label>
+    <input type="text" name="Sexo=F"/><br><br>
+    <label>Digite sua idade: </label>
+    <input type="text" name="Idade"> <br><br>
+    <input type="submit" name="btnCalcular" value="Resultado">
+</form>
+<?php
+$sexo =  $_POST["Sexo=F"] ;
+$idade = $_POST["Idade"];
+
+if ($sexo=="F" &&$idade <= 25) {
+    echo " ACEITA!";
+}
+else{
+    echo "Não Aceita";
+}
+
+?>
+
+</body>
+</html>
